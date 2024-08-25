@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import "reset.css";
+
+:root {
+    --primary: #aa0601;
+    --secondary: #650300;
+    --bg-light: #fbf2f2;
+    --backg-dark: #aa0601;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    outline: solid 1px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+
+}
+
+.imgclass {
+    width: 25%;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 372px;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container-header-full {
+    max-width: 1320px;
+    /* padding: 0px 12px; */
+    flex-wrap: wrap;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+    background-color: #AA0601;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .container-header-full {
+        padding: 0;
+    }
+}
+
+.backg-dark {
+    background: var(--backg-dark);
+}
+
+.header {
+    color: white;
+    padding: 16px 0;
+    width: 100%;
+}
+
+.header .home {
+    position: relative;
+
+    width: 80px;
+    height: 48px;
+    text-indent: 101%;
+    /* overflow: hidden; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu {
+
+    position: relative;
+    /* padding: 0; */
+    width: 25%;
+    padding: 25px;
+    /* padding-top: 12px;
+    padding-bottom: 12px; */
+    text-align: center;
+    font-size: 20px;
+    color: #FFFFFF;
+    /* border: 1px #ffffff solid; */
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: opacity 0.5s;
+
+}
+
+.paddingr-0 {
+    padding-right: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 0;
+    }
+
+    .header .home {
+        margin: 16px 12px;
+    }
+
+    .container-header-full {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .nav {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .header .menu {
+        text-align: center;
+        padding: 0;
+        width: 50%;
+    }
+
+    .header .menu a {
+        width: 100%;
+        padding: 12px 0;
+        border: solid 1px white;
+    }
+
+    .footer .nav {
+        display: none;
+    }
+}
+
+.footer {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    color: white;
+    background: var(--backg-dark);
+}
+
+.footer .nav {
+    width: 100%;
+    display: flex;
+
+    margin-bottom: 26px;
+    /* gap: 48px; */
+}
+
+.foot-menu {
+
+    font-size: 16px;
+    color: #FFFFFF;
+    /* padding: 12px 32px; */
+}
+
+
+
+.footer .social-list img {
+    width: 36px;
+}
+
+.footer .foot-menu a {
+    padding: 24px;
+}
+
+.container-md-fluid {
+    max-width: 1320px;
+    padding: 0px 12px;
+    margin: 0 auto;
+}
+
+.footer-first {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: solid 1px white;
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+}
+
+.line {
+    border: 1px solid #fff;
+    height: 1;
+    margin-bottom: 32px;
+}
+
+.footer .last {
+
+    justify-content: space-between;
+}
+
+.footer .last-copyright {
+    font-size: 16px;
+    color: #FFFFFF;
+
+    justify-content: space-between;
+}
+
+.footer .privacy {
+    font-size: 14px;
+
+    justify-content: space-between;
+}
+
+.footer .privacy a {
+    padding: 0 24px;
+}
+
+.footer .social-list img {
+    width: 48px;
+}
+
+.footer .social-list a {
+    padding: 0 20px;
+}
+
+.contact {
+    font-size: 36px;
+    color: #FFFFFF;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.material-symbols-outlined {
+    font-size: 36px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.footer .contact li:not(last-child) {
+    margin-bottom: 8px;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+a:hover:not(.logo) {
+    opacity: 0.7;
+}
+
+@media (max-width: 576px) {
+    .footer .nav {
+        display: none;
+    }
+
+    .footer .contact {
+        font-size: 16px;
+    }
+
+    .footer .social-list img {
+        width: 24px;
+    }
+
+    .footer .contact .material-symbols-outlined {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    .footer .last {
+        flex-direction: column;
+    }
+
+    .footer .privacy {
+        flex-direction: column;
+    }
+
+    .footer .privacy a {
+        padding: 4px 0;
+    }
+}
