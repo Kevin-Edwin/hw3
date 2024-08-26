@@ -13,7 +13,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: solid 1px;
+    /* outline: solid 1px; */
 }
 
 img {
@@ -211,11 +211,11 @@ a {
     margin-bottom: 36px;
 }
 
-.line {
+/* .line {
     border: 1px solid #fff;
     height: 1;
     margin-bottom: 32px;
-}
+} */
 
 .footer .last {
 
